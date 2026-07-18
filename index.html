@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KeeratronOS</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body style="background-color: #1a1a2e; color: #eaeaea; font-family: 'Trebuchet MS',  Helvetica, sans-serif; text-align: center; padding: 20px; background-image: url(images/desktop-wallpaper.png); background-size: cover; height: 100vh">
     
@@ -20,14 +21,7 @@
         <p id="timeElement" style="margin: 0;">Time</p>
     </div>
 
-    <script>
-        function updateTime() {
-            var currentTime = new Date().toLocaleString();
-            var timeText = document.querySelector("#timeElement");
-            timeText.innerHTML = currentTime;
-        }
-        setInterval(updateTime, 1000);
-    </script>
-
+    <script src="script.js"></script>
+    
 </body>
 </html>
