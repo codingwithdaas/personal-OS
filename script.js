@@ -1,4 +1,6 @@
 var selectedIcon = undefined;
+var biggestIndex = 1;
+var topBar = document.querySelector("#top");
 
 function updateTime() {
         var currentTime = new Date().toLocaleString();
@@ -53,6 +55,9 @@ function closeWindow(element) {
 
 function openWindow(element) {
     element.style.display = "block";
+    biggestIndex++;
+    element.style.zIndex = biggestIndex;
+    topBar.style.zIndex = biggestIndex + 1;
 }
 
 var welcomeScreen = document.querySelector("#welcome");
@@ -100,3 +105,18 @@ function handleIconTap(element) {
         selectIcon(element);
     }
 }
+
+function handleWindowTap(element) {
+    biggestIndex++;
+    element.style.zIndex = biggestIndex;
+    topBar.style.zIndex = biggestIndex + 1;
+}
+
+function addWindowTapHandling(element) {
+    element.addEventListener("mousedown", function() {
+        handleWindowTap(element);
+    });
+}
+
+addWindowTapHandling(welcomeScreen);
+addWindowTapHandling(sliceOfLifeScreen);
