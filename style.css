@@ -115,10 +115,27 @@
 }
 
 .sliceOfLife-content {
+    display: flex;
+    flex-direction: row;
     text-align: left;
+}
+
+.sidebar {
+    width: 200px;
+    margin-right: 16px;
 }
 
 .selected {
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 12px;
+}
+
+.sidebar-item {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
