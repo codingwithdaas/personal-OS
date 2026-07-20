@@ -64,3 +64,17 @@ welcomeScreenClose.addEventListener("click", function() {
 welcomeScreenOpen.addEventListener("click", function() {
     openWindow(welcomeScreen);
 });
+
+dragElement(document.getElementById("sliceOfLife"));
+
+var sliceOfLifeScreen = document.querySelector("#sliceOfLife");
+var sliceOfLifeClose = document.querySelector("#sliceOfLifeClose");
+var sliceOfLifeIcon = document.querySelector("#sliceOfLifeIcon");
+
+sliceOfLifeClose.addEventListener("click", function() {
+    closeWindow(sliceOfLifeScreen);
+});
+
+sliceOfLifeIcon.addEventListener("click", function() {
+    openWindow(sliceOfLifeScreen);
+});
