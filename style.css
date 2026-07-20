@@ -35,7 +35,7 @@
     border-radius: 12px;
 }
 
-.window-header {
+.window-topbar {
     position: absolute; 
     top: 0; 
     left: 0; 
@@ -57,7 +57,7 @@
     margin-top: -16px;
 }
 
-.welcome-header {
+.windowheader {
     cursor: grab; 
     user-select: none; 
     padding-bottom: 8px; 
