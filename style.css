@@ -1,0 +1,70 @@
+.body {
+    background-color: #1a1a2e; 
+    color: #eaeaea; 
+    font-family: 'Trebuchet MS', Helvetica, sans-serif; 
+    text-align: center; 
+    padding: 20px; 
+    background-image: url(images/desktop-wallpaper.png); 
+    background-size: cover; 
+    height: 100vh;
+}
+
+.window {
+    width: 800px; 
+    margin: 0 auto; 
+    background-color: #162447; 
+    padding: 20px; 
+    border: 2px solid #333; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    position: absolute; 
+    top: calc(50% - 300px);
+    left: calc(50% - 400px); 
+    flex-direction: column;
+}
+
+.window h1, .window h2 {
+    margin: 4px; 
+    padding: 4px;
+}
+
+.window img {
+    max-width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 12px;
+}
+
+.window-header {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    display: flex; 
+    justify-content: space-between; 
+    backdrop-filter: blur(10px); 
+    background-color: rgba(0, 0, 0, 0.25); 
+    color: #fff; 
+    box-sizing: border-box; 
+    padding: 16px 16px; 
+    border-bottom: 1px solid #333;
+}
+
+.window-close {
+    float: right; 
+    cursor: pointer; 
+    margin-right: -12px; 
+    margin-top: -16px;
+}
+
+.welcome-header {
+    cursor: grab; 
+    user-select: none; 
+    padding-bottom: 8px; 
+    margin-bottom: 10px; 
+    border-bottom: 1px solid #333; 
+    font-weight: 700; 
+    text-align: left; 
+    display: flex; 
+    justify-content: space-between;
+}
