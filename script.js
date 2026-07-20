@@ -1,3 +1,5 @@
+var selectedIcon = undefined;
+
 function updateTime() {
         var currentTime = new Date().toLocaleString();
         var timeText = document.querySelector("#timeElement");
@@ -73,8 +75,28 @@ var sliceOfLifeIcon = document.querySelector("#sliceOfLifeIcon");
 
 sliceOfLifeClose.addEventListener("click", function() {
     closeWindow(sliceOfLifeScreen);
+    deselectIcon(sliceOfLifeIcon);
 });
 
 sliceOfLifeIcon.addEventListener("click", function() {
+    handleIconTap(sliceOfLifeIcon);
     openWindow(sliceOfLifeScreen);
 });
+
+function selectIcon(element) {
+    element.classList.add("selected");
+    selectedIcon = element;
+}
+
+function deselectIcon(element) {
+    element.classList.remove("selected");
+    selectedIcon = undefined;
+}
+
+function handleIconTap(element) {
+    if (element.classList.contains("selected")) {
+        deselectIcon(element);
+    } else {
+        selectIcon(element);
+    }
+}
