@@ -35,7 +35,14 @@ function dragElement(element) {
         currentY = initialY - e.clientY;
         initialX = e.clientX;
         initialY = e.clientY;
-        element.style.top = (element.offsetTop - currentY) + "px";
+
+        var newTop = element.offsetTop - currentY;
+        var minTop = topBar.offsetHeight;
+
+        if (newTop < minTop) {
+            newTop = minTop;
+    }
+        element.style.top = newTop + "px";
         element.style.left = (element.offsetLeft - currentX) + "px";
     }
 
