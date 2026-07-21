@@ -1,6 +1,6 @@
 # KeeratronOS
 
-A personal web-based operating system (OS) built for the Hack Club Stardance Challenge ("Make Your Own WebOS" batch) — a desktop environment that lives entirely in the browser, hosted by **Keeratron**, a fictional AI-guide version of me!
+A personal web-based operating system (OS) built for the Hack Club Stardance Challenge ("Make Your Own WebOS" batch). It that lives entirely in the browser, hosted by **Keeratron**, a fictional AI-guide version of me!
 
 🔗 **Live demo:** [(https://personal-os-sage-five.vercel.app/)]
 
@@ -8,11 +8,11 @@ A personal web-based operating system (OS) built for the Hack Club Stardance Cha
 
 ## About
 
-KeeratronOS reimagines a personal portfolio site as a fully interactive desktop OS — complete with draggable windows, a live clock, desktop app icons, and window stacking — built from scratch with vanilla HTML, CSS, and JavaScript (no frameworks).
+KeeratronOS is a different kind of personal portofolio site. It works as a fully interactive desktop OS, complete with draggable windows, a live clock, desktop app icons, and window stacking.
 
 ## Features
 
-- **Draggable, closable windows** with real z-index stacking (click a window, it comes to front)
+- **Draggable, closable windows** with actual z-index stacking (click a window, it comes to front)
 - **Desktop app icons** with click-to-select highlighting
 - **Live clock** in the top bar
 - **Glassmorphism UI** — dark navy palette, glowing blue accents, translucent blurred surfaces
@@ -21,36 +21,13 @@ KeeratronOS reimagines a personal portfolio site as a fully interactive desktop 
 
 - **Welcome** — an introduction to Keeratron and the OS
 - **Slice of Life** — a categorized catalog of my favorite foods, hobbies, and entertainment, with a clickable sidebar
-- **Weather-O-Meter** — live weather lookup for any city, with real-time search suggestions, powered by the [Open-Meteo](https://open-meteo.com/) API
+- **Weather-O-Meter** — live weather lookup for any city, with real-time search suggestions.
 
 ## Built With
 
-- HTML5
-- CSS3 (Flexbox, `backdrop-filter`, custom classes — no external CSS frameworks)
-- Vanilla JavaScript (DOM manipulation, `fetch`, event listeners, debouncing)
-
-## Project Structure
-
-```
-├── index.html
-├── style.css
-├── script.js
-└── images/
-    ├── desktop-wallpaper.png
-    ├── keeratron.PNG
-    ├── slice-of-life-app.png
-    └── weather-o-meter-app.png
-```
-
-## Running Locally
-
-No build step required — just clone the repo and open `index.html` in a browser:
-
-```bash
-git clone https://github.com/codingwithdaas/[your-repo-name].git
-cd [your-repo-name]
-open index.html
-```
+- HTML
+- CSS
+- JavaScript
 
 ## Credits
 
