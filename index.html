@@ -9,10 +9,11 @@
 <body class="body">
 
     <div class="window-topbar" id="topbar">
-        <p id="welcomeopen" style="margin: 0; font-weight: 700;">KeeratronOS</p>
-        <p id="timeElement" style="margin: 0;">Time</p>
+        <p id="welcomeopen" class="headertext">KeeratronOS</p>
+        <p id="timeElement">Time</p>
     </div>
 
+    <!-- welcome window, first thing users see -->
     <div class="window" id="welcome">
         <div class="windowheader" id="welcomeHeader">
             <span>⠿ Welcome</span>
@@ -22,7 +23,7 @@
         <h2>Introduction</h2>
         <p>Greetings from my operating system! My name is <strong>Keeratron</strong>, and I'll be your guide and host through this digital realm.</p>
         <img src="images/keeratron.PNG" alt="Keeratron" />
-        <p><a href="https://github.com/codingwithdaas" target="_blank" rel="noopener noreferrer" style="color: #ADD8E6;">Learn more about my creator, Keerat!</a></p>
+        <p><a href="https://github.com/codingwithdaas" target="_blank" class="footer-link">Learn more about my creator, Keerat!</a></p>
     </div>
 
     <div class="desktopApps" id="desktopApps">
@@ -36,7 +37,7 @@
         </div>
     </div>
 
-    <div class="window" id="sliceOfLife" style="display: none; top: calc(50% - 250px); left: calc(50% - 400px);">
+    <div class="window window-sliceoflife" id="sliceOfLife">
         <div class="windowheader" id="sliceOfLifeHeader">
             <div class="window-close" id="sliceOfLifeclose">✖</div>
             <p class="headertext">Slice of Life</p>
@@ -48,7 +49,7 @@
         </div>
     </div>
 
-    <div class="window" id="weatherOMeter" style="display: none; top: calc(50% - 200px); left: calc(50% - 300px);">
+    <div class="window window-weather" id="weatherOMeter">
         <div class="windowheader" id="weatherOMeterHeader">
             <div class="window-close" id="weatherOMeterclose">✖</div>
             <p class="headertext">Weather-O-Meter</p>

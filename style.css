@@ -206,3 +206,19 @@ body {
 .suggestion-item:hover {
     background-color: rgba(255, 255, 255, 0.08);
 }
+
+#welcome {
+    /* uses default .window position from base class */
+}
+
+.window-sliceoflife {
+    display: none;
+    top: calc(50% - 250px);
+    left: calc(50% - 400px);
+}
+
+.window-weather {
+    display: none;
+    top: calc(50% - 195px);
+    left: calc(50% - 300px);
+}
