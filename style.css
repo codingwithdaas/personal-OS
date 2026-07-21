@@ -77,7 +77,7 @@
 .app-icon {
     text-align: center;
     padding: 8px;
-    width: fit-content;
+    width: 80px;
     cursor: pointer;
 }
 
@@ -137,5 +137,55 @@
 }
 
 .sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.weatherOMeter-content {
+    text-align: left;
+    width: 300px;
+}
+
+.weather-search-row {
+    display: flex;
+    gap: 8px;
+}
+
+.city-input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.search-button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ADD8E6;
+    color: #1a1a2e;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.weather-result {
+    margin-top: 16px;
+}
+
+.city-suggestions {
+    position: relative;
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: -4px;
+}
+
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }

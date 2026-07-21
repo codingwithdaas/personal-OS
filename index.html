@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body class="body">
-    
+
     <div class="window-topbar" id="topbar">
         <p id="welcomeopen" style="margin: 0; font-weight: 700;">KeeratronOS</p>
         <p id="timeElement" style="margin: 0;">Time</p>
@@ -19,7 +19,7 @@
             <span class="window-close" id="welcomeclose">✖</span>
         </div>
         <h1>Welcome to my OS!</h1>
-        <h2>Introduction </h2>
+        <h2>Introduction</h2>
         <p>Greetings from my operating system! My name is <strong>Keeratron</strong>, and I'll be your guide and host through this digital realm.</p>
         <img src="images/keeratron.PNG" alt="Keeratron" />
         <p><a href="https://github.com/codingwithdaas" target="_blank" rel="noopener noreferrer" style="color: #ADD8E6;">Learn more about my creator, Keerat!</a></p>
@@ -27,8 +27,12 @@
 
     <div class="desktopApps" id="desktopApps">
         <div id="sliceOfLifeIcon" class="app-icon">
-        <img class="app-icon-image" src="images/slice-of-life-app.png" alt="Slice of Life Icon" />
-        <p class="app-icon-label">Slice of Life</p>
+            <img class="app-icon-image" src="images/slice-of-life-app.png" alt="Slice of Life Icon" />
+            <p class="app-icon-label">Slice of Life</p>
+        </div>
+        <div id="weatherOMeterIcon" class="app-icon">
+            <img class="app-icon-image" src="images/weather-o-meter-app.png" alt="Weather-O-Meter Icon" />
+            <p class="app-icon-label">Weather-O-Meter</p>
         </div>
     </div>
 
@@ -36,19 +40,31 @@
         <div class="windowheader" id="sliceOfLifeHeader">
             <div class="window-close" id="sliceOfLifeclose">✖</div>
             <p class="headertext">Slice of Life</p>
-        <div class="header-spacer"></div>
+            <div class="header-spacer"></div>
+        </div>
+        <div class="sliceOfLife-content">
+            <div id="sidebar" class="sidebar"></div>
+            <div id="contentArea" class="content-area"></div>
+        </div>
     </div>
-    <div class="sliceOfLife-content">
-    <div id="sidebar" class="sidebar">
 
-    </div>
-    <div id="contentArea" class="content-area">
-
-    </div>
-    </div>
+    <div class="window" id="weatherOMeter" style="display: none; top: calc(50% - 200px); left: calc(50% - 300px);">
+        <div class="windowheader" id="weatherOMeterHeader">
+            <div class="window-close" id="weatherOMeterclose">✖</div>
+            <p class="headertext">Weather-O-Meter</p>
+            <div class="header-spacer"></div>
+        </div>
+        <div class="weatherOMeter-content">
+            <div class="weather-search-row">
+                <input type="text" id="cityInput" class="city-input" placeholder="Enter a city..." autocomplete="off"/>
+                <button id="searchButton" class="search-button">Search</button>
+            </div>
+            <div id="citySuggestions" class="city-suggestions"></div>
+            <div id="weatherResult" class="weather-result"></div>
+        </div>
     </div>
 
     <script src="script.js"></script>
-    
+
 </body>
 </html>
