@@ -31,14 +31,16 @@ KeeratronOS reimagines a personal portfolio site as a fully interactive desktop 
 
 ## Project Structure
 
+```
 ├── index.html
 ├── style.css
 ├── script.js
 └── images/
-├── desktop-wallpaper.png
-├── keeratron.PNG
-├── slice-of-life-app.png
-└── weather-o-meter-app.png
+    ├── desktop-wallpaper.png
+    ├── keeratron.PNG
+    ├── slice-of-life-app.png
+    └── weather-o-meter-app.png
+```
 
 ## Running Locally
 
@@ -49,10 +51,6 @@ git clone https://github.com/codingwithdaas/[your-repo-name].git
 cd [your-repo-name]
 open index.html
 ```
-
-## Credits
-
-Built by [Keerat](https://github.com/codingwithdaas) as part of Hack Club's Stardance Challenge.
 
 ## Credits
 
